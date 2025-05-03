@@ -13,22 +13,18 @@
       
       
       
-        <link rel="prev" href="../uso/">
       
       
-        <link rel="next" href="../creditos/">
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="/assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>Configuración AWS - UTEC Logger</title>
+        <title>UTEC Logger</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="/assets/stylesheets/main.2afb09e1.min.css">
       
       
 
@@ -47,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,11 +61,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#configuracion-de-aws-y-cloudwatch" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -82,7 +73,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="UTEC Logger" class="md-header__button md-logo" aria-label="UTEC Logger" data-md-component="logo">
+    <a href="/." title="UTEC Logger" class="md-header__button md-logo" aria-label="UTEC Logger" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuración AWS
+              
             
           </span>
         </div>
@@ -192,7 +183,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="UTEC Logger" class="md-nav__button md-logo" aria-label="UTEC Logger" data-md-component="logo">
+    <a href="/." title="UTEC Logger" class="md-nav__button md-logo" aria-label="UTEC Logger" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -222,7 +213,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="/." class="md-nav__link">
         
   
   
@@ -244,7 +235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../uso/" class="md-nav__link">
+      <a href="/uso/" class="md-nav__link">
         
   
   
@@ -263,32 +254,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Configuración AWS
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="/configuracion/" class="md-nav__link">
         
   
   
@@ -299,77 +268,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#variables-necesarias" class="md-nav__link">
-    <span class="md-ellipsis">
-      Variables necesarias
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-establecer-variables-en-tu-entorno" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cómo establecer variables en tu entorno
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cómo establecer variables en tu entorno">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#en-sistemas-unixmacos" class="md-nav__link">
-    <span class="md-ellipsis">
-      En sistemas UNIX/macOS
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#en-windows-cmd" class="md-nav__link">
-    <span class="md-ellipsis">
-      En Windows (CMD)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resultado" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resultado
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -381,7 +279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../creditos/" class="md-nav__link">
+      <a href="/creditos/" class="md-nav__link">
         
   
   
@@ -413,67 +311,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#variables-necesarias" class="md-nav__link">
-    <span class="md-ellipsis">
-      Variables necesarias
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#como-establecer-variables-en-tu-entorno" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cómo establecer variables en tu entorno
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cómo establecer variables en tu entorno">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#en-sistemas-unixmacos" class="md-nav__link">
-    <span class="md-ellipsis">
-      En sistemas UNIX/macOS
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#en-windows-cmd" class="md-nav__link">
-    <span class="md-ellipsis">
-      En Windows (CMD)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resultado" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resultado
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -485,58 +322,8 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-                  
+  <h1>404 - Not found</h1>
 
-
-  
-  
-
-
-<h1 id="configuracion-de-aws-y-cloudwatch">Configuración de AWS y CloudWatch</h1>
-<p>Para habilitar el envío de logs a <strong>CloudWatch Logs</strong> de AWS, necesitas definir algunas variables de entorno en tu sistema.</p>
-<h2 id="variables-necesarias">Variables necesarias</h2>
-<pre><code class="language-env">AWS_ACCESS_KEY_ID=TU_ACCESS_KEY
-AWS_SECRET_ACCESS_KEY=TU_SECRET_KEY
-AWS_SESSION_TOKEN=TU_SESSION_TOKEN (opcional, solo si usas sesión temporal)
-AWS_REGION=us-east-1
-
-CLOUD_WATCH_GROUP=NombreDelGrupoDeLogs
-CLOUD_WATCH_STREAM=NombreDelStream
-</code></pre>
-<blockquote>
-<p>⚠️ Asegúrate de que las claves tengan los permisos necesarios para usar <code>logs:PutLogEvents</code>, <code>logs:CreateLogGroup</code>, <code>logs:CreateLogStream</code>, y <code>sts:GetCallerIdentity</code>.</p>
-</blockquote>
-<h2 id="como-establecer-variables-en-tu-entorno">Cómo establecer variables en tu entorno</h2>
-<h3 id="en-sistemas-unixmacos">En sistemas UNIX/macOS</h3>
-<p>Agrega esto a tu <code>.bashrc</code>, <code>.zshrc</code>, o ejecuta directamente:</p>
-<pre><code class="language-bash">export AWS_ACCESS_KEY_ID=&quot;...&quot;
-export AWS_SECRET_ACCESS_KEY=&quot;...&quot;
-export AWS_REGION=&quot;us-east-1&quot;
-export CLOUD_WATCH_GROUP=&quot;mi-grupo&quot;
-export CLOUD_WATCH_STREAM=&quot;mi-stream&quot;
-</code></pre>
-<h3 id="en-windows-cmd">En Windows (CMD)</h3>
-<pre><code class="language-cmd">set AWS_ACCESS_KEY_ID=...
-set AWS_SECRET_ACCESS_KEY=...
-set AWS_REGION=us-east-1
-set CLOUD_WATCH_GROUP=mi-grupo
-set CLOUD_WATCH_STREAM=mi-stream
-</code></pre>
-<h2 id="resultado">Resultado</h2>
-<p>Una vez configurado correctamente, el logger enviará automáticamente los logs a CloudWatch además de imprimirlos por consola y almacenarlos localmente en la carpeta <code>logs/</code>.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-                
               </article>
             </div>
           
@@ -572,10 +359,10 @@ set CLOUD_WATCH_STREAM=mi-stream
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="/assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
