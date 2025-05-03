@@ -1,0 +1,11 @@
+site_name: UTEC Logger
+site_description: Logger personalizado con integración AWS CloudWatch
+site_author: Geraldo Colchado, Maykol Morales, Gino Daza, Ian Condori
+repo_url: https://github.com/UTEC-Logger
+nav:
+  - Inicio: index.md
+  - Uso: uso.md
+  - Configuración AWS: configuracion.md
+  - Créditos: creditos.md
+theme:
+  name: material
