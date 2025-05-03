@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Logger personalizado con integración AWS CloudWatch">
+        
         <meta name="author" content="Geraldo Colchado, Maykol Morales, Gino Daza, Ian Condori">
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>UTEC Logger</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Configuración AWS - UTEC Logger</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">UTEC Logger</a>
+                <a class="navbar-brand" href="..">UTEC Logger</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,16 +35,16 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Inicio</a>
+                                <a href=".." class="nav-link">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="uso/" class="nav-link">Uso</a>
+                                <a href="../uso/" class="nav-link">Uso</a>
                             </li>
                             <li class="nav-item">
-                                <a href="configuracion/" class="nav-link">Configuración AWS</a>
+                                <a href="./" class="nav-link active" aria-current="page">Configuración AWS</a>
                             </li>
                             <li class="nav-item">
-                                <a href="creditos/" class="nav-link">Créditos</a>
+                                <a href="../creditos/" class="nav-link">Créditos</a>
                             </li>
                         </ul>
 
@@ -55,17 +55,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../uso/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="uso/" class="nav-link">
+                                <a rel="next" href="../creditos/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/UTEC-Logger/edit/master/docs/index.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/UTEC-Logger/edit/master/docs/configuracion.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -85,8 +85,20 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#utec-logger" class="nav-link">UTEC Logger</a>
+            <li class="nav-item" data-bs-level="1"><a href="#configuracion-de-aws-y-cloudwatch" class="nav-link">Configuración de AWS y CloudWatch</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#variables-necesarias" class="nav-link">Variables necesarias</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#como-establecer-variables-en-tu-entorno" class="nav-link">Cómo establecer variables en tu entorno</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#resultado" class="nav-link">Resultado</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -94,15 +106,38 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="utec-logger">UTEC Logger</h1>
-<p>Un logger en Python con soporte para:</p>
-<ul>
-<li>Formato de consola con colores según el nivel</li>
-<li>Registro de logs en archivos locales (<code>/logs</code>)</li>
-<li>Envío automático a AWS CloudWatch Logs</li>
-<li>Variables de entorno para configuración</li>
-</ul>
-<p>Este proyecto fue desarrollado como parte del curso <strong>Cloud Computing – UTEC</strong> y puede servir como plantilla para sistemas con trazabilidad centralizada.</p></div>
+<h1 id="configuracion-de-aws-y-cloudwatch">Configuración de AWS y CloudWatch</h1>
+<p>Para habilitar el envío de logs a <strong>CloudWatch Logs</strong> de AWS, necesitas definir algunas variables de entorno en tu sistema.</p>
+<h2 id="variables-necesarias">Variables necesarias</h2>
+<pre><code class="language-env">AWS_ACCESS_KEY_ID=TU_ACCESS_KEY
+AWS_SECRET_ACCESS_KEY=TU_SECRET_KEY
+AWS_SESSION_TOKEN=TU_SESSION_TOKEN (opcional, solo si usas sesión temporal)
+AWS_REGION=us-east-1
+
+CLOUD_WATCH_GROUP=NombreDelGrupoDeLogs
+CLOUD_WATCH_STREAM=NombreDelStream
+</code></pre>
+<blockquote>
+<p>⚠️ Asegúrate de que las claves tengan los permisos necesarios para usar <code>logs:PutLogEvents</code>, <code>logs:CreateLogGroup</code>, <code>logs:CreateLogStream</code>, y <code>sts:GetCallerIdentity</code>.</p>
+</blockquote>
+<h2 id="como-establecer-variables-en-tu-entorno">Cómo establecer variables en tu entorno</h2>
+<h3 id="en-sistemas-unixmacos">En sistemas UNIX/macOS</h3>
+<p>Agrega esto a tu <code>.bashrc</code>, <code>.zshrc</code>, o ejecuta directamente:</p>
+<pre><code class="language-bash">export AWS_ACCESS_KEY_ID=&quot;...&quot;
+export AWS_SECRET_ACCESS_KEY=&quot;...&quot;
+export AWS_REGION=&quot;us-east-1&quot;
+export CLOUD_WATCH_GROUP=&quot;mi-grupo&quot;
+export CLOUD_WATCH_STREAM=&quot;mi-stream&quot;
+</code></pre>
+<h3 id="en-windows-cmd">En Windows (CMD)</h3>
+<pre><code class="language-cmd">set AWS_ACCESS_KEY_ID=...
+set AWS_SECRET_ACCESS_KEY=...
+set AWS_REGION=us-east-1
+set CLOUD_WATCH_GROUP=mi-grupo
+set CLOUD_WATCH_STREAM=mi-stream
+</code></pre>
+<h2 id="resultado">Resultado</h2>
+<p>Una vez configurado correctamente, el logger enviará automáticamente los logs a CloudWatch además de imprimirlos por consola y almacenarlos localmente en la carpeta <code>logs/</code>.</p></div>
             </div>
         </div>
 
@@ -110,13 +145,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -181,8 +216,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-05-03 05:50:38.336678+00:00
--->
