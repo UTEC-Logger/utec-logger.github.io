@@ -13,8 +13,10 @@
       
       
       
-        <link rel="prev" href="../visualizador/">
+        <link rel="prev" href="../uso/">
       
+      
+        <link rel="next" href="../creditos/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +24,7 @@
     
     
       
-        <title>Créditos - UTEC Logger</title>
+        <title>Visualizador de Logs - UTEC Logger</title>
       
     
     
@@ -64,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creditos" class="md-skip">
+        <a href="#visualizador-de-logs-en-docker" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Créditos
+              Visualizador de Logs
             
           </span>
         </div>
@@ -283,28 +285,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../visualizador/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Visualizador de Logs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -322,7 +302,7 @@
   
   
   <span class="md-ellipsis">
-    Créditos
+    Visualizador de Logs
     
   </span>
   
@@ -335,7 +315,7 @@
   
   
   <span class="md-ellipsis">
-    Créditos
+    Visualizador de Logs
     
   </span>
   
@@ -358,9 +338,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#equipo" class="md-nav__link">
+  <a href="#ejecucion" class="md-nav__link">
     <span class="md-ellipsis">
-      Equipo
+      🚀 Ejecución
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-hace" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 ¿Qué hace?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Seguridad
     </span>
   </a>
   
@@ -370,6 +368,28 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creditos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Créditos
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -401,9 +421,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#equipo" class="md-nav__link">
+  <a href="#ejecucion" class="md-nav__link">
     <span class="md-ellipsis">
-      Equipo
+      🚀 Ejecución
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-hace" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 ¿Qué hace?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔒 Seguridad
     </span>
   </a>
   
@@ -428,21 +466,24 @@
   
 
 
-<h1 id="creditos">Créditos</h1>
-<p>Este proyecto fue desarrollado con el apoyo de miembros del curso de Cloud Computing de la Universidad de Ingeniería y Tecnología (UTEC).</p>
-<h2 id="equipo">Equipo</h2>
-<p><strong>Geraldo Colchado</strong><br />
-📧 gcolchado@utec.edu.pe<br />
-👨‍🏫 Profesor de Cloud Computing</p>
-<p><strong>Maykol Morales</strong><br />
-📧 maykol.morales@utec.edu.pe<br />
-🧠 ACL de Cloud Computing</p>
-<p><strong>Gino Daza</strong><br />
-📧 gino.daza@utec.edu.pe<br />
-🎓 Ex-Alumno de Cloud Computing</p>
-<p><strong>Ian Condori</strong><br />
-📧 ian.condori@utec.edu.pe<br />
-🎓 Ex-Alumno de Cloud Computing</p>
+<h1 id="visualizador-de-logs-en-docker">Visualizador de Logs en Docker</h1>
+<p>Este proyecto incluye una herramienta visual basada en Docker que te permite explorar los archivos generados en la carpeta <code>logs/</code> de forma interactiva.</p>
+<h2 id="ejecucion">🚀 Ejecución</h2>
+<p>Para iniciar el visualizador, ejecuta el siguiente comando en tu terminal:</p>
+<pre><code class="language-bash">docker run -d -p 3000:3000 -e LOGS_DIR=/logs -v &quot;/ruta/a/tu/carpeta/logs:/logs&quot; maykolm/utec-logger:latest
+</code></pre>
+<p>📌 Reemplaza <code>"/ruta/a/tu/carpeta/logs"</code> con la ruta local donde se encuentren los archivos <code>.log</code>.</p>
+<p>Por ejemplo:</p>
+<pre><code class="language-bash">docker run -d -p 3000:3000 -e LOGS_DIR=/logs -v &quot;/home/ubuntu/logs:/logs&quot; maykolm/utec-logger:latest
+</code></pre>
+<h2 id="que-hace">📁 ¿Qué hace?</h2>
+<ul>
+<li>Escanea los archivos <code>.log</code> generados por <code>Logger</code>.</li>
+<li>Permite filtrarlos por <strong>nombre</strong>, <strong>tipo</strong> y <strong>fecha</strong>.</li>
+<li>Despliega el contenido en un panel accesible vía navegador web en <a href="http://localhost:3000">http://localhost:3000</a>.</li>
+</ul>
+<h2 id="seguridad">🔒 Seguridad</h2>
+<p>Asegúrate de no exponer los logs sensibles si estás corriendo el contenedor en producción o ambientes accesibles por otros usuarios.</p>
 
 
 
