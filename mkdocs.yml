@@ -5,7 +5,8 @@ repo_url: https://github.com/UTEC-Logger
 nav:
   - Inicio: index.md
   - Uso: uso.md
-  - Configuración AWS: configuracion.md
+  - Configuración de AWS: configuracion.md
+  - Visualizador de Logs: visualizador.md
   - Créditos: creditos.md
 theme:
   name: material

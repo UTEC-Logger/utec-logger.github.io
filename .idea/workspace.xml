@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f098cd5c-7eee-492e-ba26-977a9531a5ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/configuracion.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/creditos.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/uso.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mkdocs.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nojekyll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuracion/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/creditos/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/fontawesome/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/apple-touch-icon-precomposed-152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/gitbook.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/theme.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/lunr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/search_index.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitemap.xml.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uso/index.html" beforeDir="false" />
-    </list>
+    <list default="true" id="f098cd5c-7eee-492e-ba26-977a9531a5ef" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +29,9 @@
   "associatedIndex": 1
 }]]></component>
   <component name="ProjectId" id="2wZY7xjYqWkym2adu3vLwGtidNF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -99,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746250400010</updated>
-      <workItem from="1746250400947" duration="1467000" />
+      <workItem from="1746250400947" duration="1882000" />
     </task>
     <servers />
   </component>
