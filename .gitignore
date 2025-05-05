@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Editor config
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# MkDocs output folder
+site/
+
+# Python packages
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# mkdocs cache
+.mypy_cache/
+.pytest_cache/
+.cache/
